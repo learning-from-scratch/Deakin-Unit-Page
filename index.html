@@ -1,53 +1,295 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-   <title> Home </title>
-   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deakin University - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
 </head>
-<div>
-   <img src="logo.svg" alt="Deakin" width="200" height="210">
-</div>
-
 <body>
-   <h1>SIT223-SIT753 - Professional Practice in IT</h1>
-   <h2 id="unit-details">Unit details</h2>
-   <table>
-      <tbody>
-         <tr>
-            <td><strong>Year:</strong></td>
-            <td>2023 unit information</td>
-         </tr>
-         <tr>
-            <td><strong>Enrolment modes:</strong></td>
-            <td>Trimester 1: Burwood (Melbourne), Geelong, Cloud (online)</td>
-         </tr>
-         <tr>
-            <td><strong>Credit point(s):</strong></td>
-            <td>1</td>
-         </tr>
-         <tr>
-            <td><strong>Unit Chair:</strong></td>
-            <td>Trimester 1: Azadeh Ghari Neiat</td>
-         </tr>
-         <tr>
-            <td> Scheduled Learning Activities:</td>
-            <td> 1 x 3 hour active class per week, weekly drop in support.</td>
-         </tr>
-      </tbody>
-   </table>
-   <p>To be successful IT graduates need to understand the use of industry tools and practices, the ways these tools
-      work and connect together, and the underlying professional, ethical, and teamwork knowledge and skills needed to
-      put these into practice in a professional manner.</p>
-   <p>
-      To be eligible to obtain a pass in this unit, students must meet certain milestones as part of the portfolio.
-   </p>
-   <a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees"> > Current students</a>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.svg" alt="Deakin" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i> Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i> Current students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Future students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-users"></i> Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-globe"></i> International</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Study
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href ="#"> Find a course</a></li>
+                            <li><a class="dropdown-item" href="#">Fees and scholarships</a></li>
+                            <li><a class="dropdown-item" href="#">Key dates</a></li>
+                            <li><a class="dropdown-item" href="#">How to apply</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Student life and services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Health and wellbeing</a></li>
+                            <li><a class="dropdown-item" href="#">Accommodation</a></li>
+                            <li><a class="dropdown-item" href="#">Campus life</a></li>
+                            <li><a class="dropdown-item" href="#">Financial support</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">Diversity and inclusion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            International students
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Entry requirements</a></li>
+                            <li><a class="dropdown-item" href="#">Apply to study</a></li>
+                            <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Research degrees and PhD</a></li>
+                            <li><a class="dropdown-item" href="#">Research strengths</a></li>
+                            <li><a class="dropdown-item" href="#">Find a research supervisor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Partnerships and engagement
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ways to partner</a></li>
+                            <li><a class="dropdown-item" href="#">Donate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            About Deakin
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Locations</a></li>
+                            <li><a class="dropdown-item" href="#">Leadership and governance</a></li>
+                            <li><a class="dropdown-item" href="#">Careers at Deakin</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container-fluid p-0">
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <div class="hero-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h1 class="hero-title">Shape the future with Deakin</h1>
+                                    <p class="hero-subtitle">Discover world-class education, cutting-edge research, and endless opportunities to make your mark on the world.</p>
+                                    <div class="hero-buttons">
+                                        <a href="#" class="btn btn-primary btn-lg me-3">Study with us</a>
+                                        <a href="#" class="btn btn-outline-light btn-lg">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="quick-link-card text-center">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h4>Study</h4>
+                        <p>Find your perfect course and start your journey</p>
+                        <a href="#" class="btn btn-outline-primary">Explore courses</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="quick-link-card text-center">
+                        <i class="fas fa-flask fa-3x text-primary mb-3"></i>
+                        <h4>Research</h4>
+                        <p>Discover our world-leading research areas</p>
+                        <a href="#" class="btn btn-outline-primary">Research areas</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="quick-link-card text-center">
+                        <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                        <h4>Campuses</h4>
+                        <p>Visit our beautiful campuses across Victoria</p>
+                        <a href="#" class="btn btn-outline-primary">Campus tours</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="quick-link-card text-center">
+                        <i class="fas fa-calendar-alt fa-3x text-primary mb-3"></i>
+                        <h4>Events</h4>
+                        <p>Join us for exciting events and activities</p>
+                        <a href="#" class="btn btn-outline-primary">View events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featured-content py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Latest News</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=News+1" class="img-fluid rounded" alt="News">
+                                <div class="news-content p-3">
+                                    <h5>Deakin ranked in top 1% globally</h5>
+                                    <p class="text-muted">Deakin University has been ranked in the top 1% of universities worldwide in the latest QS World University Rankings.</p>
+                                    <a href="#" class="text-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=News+2" class="img-fluid rounded" alt="News">
+                                <div class="news-content p-3">
+                                    <h5>New research partnership announced</h5>
+                                    <p class="text-muted">Deakin partners with leading industry organizations to advance sustainable technology research.</p>
+                                    <a href="#" class="text-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <div class="events-list">
+                        <div class="event-item border-bottom pb-3 mb-3">
+                            <div class="event-date text-primary fw-bold">15 Dec</div>
+                            <h6>Open Day 2024</h6>
+                            <p class="text-muted small">Experience campus life and meet our community</p>
+                        </div>
+                        <div class="event-item border-bottom pb-3 mb-3">
+                            <div class="event-date text-primary fw-bold">20 Dec</div>
+                            <h6>Graduation Ceremony</h6>
+                            <p class="text-muted small">Celebrating our graduates' achievements</p>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date text-primary fw-bold">25 Dec</div>
+                            <h6>Research Symposium</h6>
+                            <p class="text-muted small">Showcasing cutting-edge research projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <h5>Contact Us</h5>
+                    <p>1800 693 888<br>
+                    info@deakin.edu.au</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Study</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Research</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Campuses</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Burwood</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Geelong</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Warrnambool</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cloud Campus</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p>Stay updated with our latest news and events</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Deakin University. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Terms of Use</a>
+                    <a href="#" class="text-light text-decoration-none">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>
-<title> Home </title>
-<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
-
 </html>
