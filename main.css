@@ -574,3 +574,353 @@ footer a:hover {
         margin-bottom: 0;
     }
 }
+
+/* Unit Page Specific Styles */
+
+/* Unit Content Cards */
+.unit-details-card,
+.unit-description-card,
+.learning-outcomes-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.unit-details-card:hover,
+.unit-description-card:hover,
+.learning-outcomes-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Unit Table Styling */
+.table-hover tbody tr:hover {
+    background-color: var(--deakin-light-blue);
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 1rem 0.75rem;
+}
+
+.table td.fw-bold {
+    color: var(--deakin-dark);
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Unit Content Text */
+.unit-content-text .lead {
+    color: var(--deakin-dark);
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.unit-content-text p {
+    color: var(--deakin-gray);
+    line-height: 1.6;
+}
+
+/* Learning Outcomes */
+.outcome-item {
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.outcome-item:hover {
+    background-color: var(--deakin-light-blue);
+    transform: translateX(5px);
+}
+
+.outcome-item h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.outcome-item p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Sidebar Cards */
+.quick-actions-card,
+.important-dates-card,
+.campus-info-card,
+.current-students-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.quick-actions-card:hover,
+.important-dates-card:hover,
+.campus-info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Quick Actions */
+.quick-actions-card .btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.75rem 1rem;
+}
+
+/* Important Dates */
+.date-item {
+    transition: all 0.3s ease;
+}
+
+.date-item:hover {
+    background-color: var(--deakin-light-blue);
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin: -0.5rem;
+}
+
+.date-label {
+    font-size: 0.9rem;
+}
+
+.date-details {
+    font-size: 0.85rem;
+    color: var(--deakin-gray);
+}
+
+/* Campus Information */
+.campus-item {
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.campus-item:hover {
+    background-color: var(--deakin-light-blue);
+}
+
+.campus-name {
+    font-size: 0.95rem;
+}
+
+.campus-details {
+    font-size: 0.8rem;
+}
+
+/* Current Students Card */
+.current-students-card {
+    background: linear-gradient(135deg, var(--deakin-blue) 0%, var(--deakin-dark-blue) 100%) !important;
+}
+
+.current-students-card .btn {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.current-students-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Related Units */
+.related-unit-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.related-unit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+    border-color: var(--deakin-blue);
+}
+
+.related-unit-card h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.related-unit-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments for unit page */
+@media (max-width: 768px) {
+    .unit-details-card,
+    .unit-description-card,
+    .learning-outcomes-card,
+    .quick-actions-card,
+    .important-dates-card,
+    .campus-info-card,
+    .current-students-card {
+        margin-bottom: 2rem;
+    }
+
+    .outcome-item {
+        margin-bottom: 1rem;
+    }
+
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+
+    .quick-actions-card .btn {
+        text-align: center;
+    }
+}
+
+/* Contact Page Specific Styles */
+
+/* Contact Form */
+.contact-form-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Form Styling */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--deakin-blue);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--deakin-dark);
+    margin-bottom: 0.5rem;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: var(--deakin-gray);
+}
+
+.form-check-input:checked {
+    background-color: var(--deakin-blue);
+    border-color: var(--deakin-blue);
+}
+
+/* Contact Information Cards */
+.contact-info-card,
+.campus-locations-card,
+.quick-links-card,
+.emergency-contact-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-card:hover,
+.campus-locations-card:hover,
+.quick-links-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Contact Items */
+.contact-item {
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.contact-item:hover {
+    background-color: var(--deakin-light-blue);
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.contact-details {
+    font-size: 0.85rem;
+    color: var(--deakin-gray);
+}
+
+/* Campus Locations */
+.campus-item {
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.campus-item:hover {
+    background-color: var(--deakin-light-blue);
+}
+
+.campus-name {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.campus-details {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Quick Links */
+.quick-links-card .btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.75rem 1rem;
+}
+
+/* Emergency Contact */
+.emergency-contact-card {
+    background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%) !important;
+    border: none;
+}
+
+.emergency-contact-card h4 {
+    font-weight: 600;
+}
+
+.emergency-contact-card .fw-bold {
+    font-size: 1.1rem;
+}
+
+/* Form Validation Styles */
+.form-control.is-invalid {
+    border-color: var(--deakin-danger);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-valid {
+    border-color: var(--deakin-success);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.invalid-feedback {
+    color: var(--deakin-danger);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.valid-feedback {
+    color: var(--deakin-success);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments for contact page */
+@media (max-width: 768px) {
+    .contact-form-card,
+    .contact-info-card,
+    .campus-locations-card,
+    .quick-links-card,
+    .emergency-contact-card {
+        margin-bottom: 2rem;
+    }
+
+    .quick-links-card .btn {
+        text-align: center;
+    }
+
+    .form-check-label {
+        font-size: 0.85rem;
+    }
+}
